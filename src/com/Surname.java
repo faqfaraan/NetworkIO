@@ -1,6 +1,8 @@
 package com;
 
-public class Surname {
+import java.io.Serializable;
+
+public class Surname implements Serializable {
     private String surname;
     private String frequency;
     private String rank;
@@ -15,14 +17,4 @@ public class Surname {
     public String toString() {
         return "Surname: " + surname.toUpperCase() + " frequency: " + frequency + "% rank: " + rank;
     }
-
-
-//    @Override
-//    public String toString() {
-//        return "Surname{" +
-//                "surname='" + surname + '\'' +
-//                ", frequency='" + frequency + '\'' +
-//                ", rank='" + rank + '\'' +
-//                '}';
-//    }
 }
